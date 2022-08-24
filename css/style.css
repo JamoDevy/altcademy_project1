@@ -1,6 +1,47 @@
-.nav-brand {
-    color: brown;
-    float: right;
 
+
+
+
+.header {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    min-height: 550px;
 }
 
+h1 {
+    text-align: center;
+    color: rgb(212, 56, 166);
+    padding-top: 150px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 70px;
+}
+
+p {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.nav-link {
+    border: solid 1px rgb(164, 164, 233);
+    padding: 10px;
+    border-radius: 50%;
+    background-color: black;
+    background-image: linear-gradient(black, rgb(94, 5, 67));
+}
+
+.nav-item {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.navbar-brand {
+    padding: 20px 20px;
+    
+}
+
+.navbar {
+    background-color: black;
+}
