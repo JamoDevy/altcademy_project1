@@ -27,37 +27,66 @@ h1 {
 }
 
 /*nav bar container*/
-
-.nav-link {
-    border: solid 1px rgb(164, 164, 233);
-    padding: 10px;
-    border-radius: 50%;
-    background-color: black;
-    background-image: linear-gradient(black, rgb(94, 5, 67));
+@media screen and (min-width: 992px) {
+    
+    .nav-link {
+        border: solid 1px rgb(164, 164, 233);
+        padding: 5px;
+        border-radius: 50%;
+        background-color: black;
+        background-image: linear-gradient(black, rgb(94, 5, 67));
+    }
 }
 
+
+
+
+.navbar-toggler-icon {
+    color: purple;
+    background-color: rgb(212, 56, 166);
+    border-radius: 10%;
+}
 .nav-item {
     padding-left: 15px;
     padding-right: 15px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
 }
 
 .navbar-brand {
-    padding: 20px 20px;
+    padding: 10px 10px;
     
 }
 
 .navbar {
     background-color: black;
+    z-index: 2;
+    
+}
+
+.navbar-collapse {
+    color: purple;
 }
 
 /*hero-2 container*/
 #hero-2 {
-    background-color: rgb(174, 185, 185);
+    
     height: 500px;
     width: 100%;
     border-bottom: solid 1px black;
-    
+    background-image: linear-gradient(black, rgb(174, 185, 185), black);
+}
+
+@media screen and (max-width: 768px) {
+   #hero-2 {
+    background-color: rgb(94, 5, 67);
+    background-image: none;
+   }
+   .about_me {
+    text-align: center;
+    color: white;
+    border: 0px;
+   }
 }
 
 .about_me {
@@ -95,6 +124,12 @@ h1 {
     
 }
 
+#hero2image:hover {
+    border-radius: 10px;
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgb(94, 5, 67);
+    
+}
+
 /*hero-3 container*/
 
 #hero-3 {
@@ -105,10 +140,11 @@ h1 {
 
 .title-projects {
     text-align: center;
-    padding-top: 50px;
+    padding-top: 80px;
     font-weight: 600;
     padding-bottom: 50px;
     color: white;
+
     
 }
 
@@ -121,7 +157,7 @@ h1 {
     background-color: black;
     cursor: pointer;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     border-radius: 10px;
     font-size: 20px;
     font-weight: 600;
@@ -247,8 +283,8 @@ footer {
 
 .rights-altcademy-link {
     padding: 15px;
-    float: left;
-    margin-left: -100px;
+   
+    margin-left: 5px;
     text-decoration: underline;
     
 }
